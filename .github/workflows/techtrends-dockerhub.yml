@@ -22,7 +22,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:
-          context: ./project   # Assuming your project directory is named 'project'
-          file: ./project/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: true
           tags: karen1216/techtrends:latest
